@@ -1,0 +1,282 @@
+body {
+    position: relative;
+}
+
+.yaco {
+    color: #f4ad17;
+    font-weight: bolder;
+}
+
+.group {
+    font-weight: bolder;
+}
+
+.d-flex {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+#offer {
+    font-weight: bold;
+}
+
+#offer a {
+    margin-left: 15px;
+}
+
+#note {
+    background-color:#f4ad17 !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#serv {
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.dropdown-item {
+    font-weight: 400;
+}
+
+/* end of nav-bar */
+
+.main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 50px;
+    min-height: calc(100vh - 100px)
+}
+
+.about {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-image: url("../images/yaco3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInAnimation ease-in 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* .about img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+} */
+
+.serv-img {
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f4ad17;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.Us {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.row.g-4 {
+    margin-top: -40px;
+}
+
+/* div.feature.col {
+    margin-top: -40px;
+} */
+
+.feature-icon{
+    background-color: #212529 !important;
+    border-radius: 10px;
+}
+
+.pb-2 {
+    color: #f4ad17; 
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.circle {
+    background-color: #212529;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.more {
+    color: #f4ad17;
+}
+
+.serv-link {
+    text-decoration: none;
+    color: #f4ad17;
+    background-color: #212529;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+}
+
+footer {
+    background-color:  #212529;
+    height: 110px;
+    margin-top: 30px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%; */
+}
+
+.links {
+    margin-top: 15px;
+    color: #f4ad17;
+
+}
+
+.platforms section {
+    margin-top: -15px;
+}
+
+.copy {
+    color: #f4ad17;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+/* service styling */
+
+.ser_box {
+
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    background-color: lightgray;
+    align-self: center;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+
+/* contact styling */
+
+#contacts {
+    flex-direction: column;
+    margin-top: -95px;
+    /* border: 2px solid blue; */
+}
+
+.info-block {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    /* width: 70%; */
+    align-self: center;
+    align-items: center;
+}
+
+.row-class {
+    display: flex;
+    flex-basis: auto;
+    margin-bottom: 20px;
+    /* margin-left: -6.5rem; */
+}
+
+.center_class {
+    width: 40%;
+    margin-left: -100px;
+}
+
+#contacts p {
+    font-size: 1.2rem;
+    color:  #212529;
+    font-weight: bold;
+    margin-left: -2rem;
+}
+
+.box3 {
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#contact_img {
+    background-color: #212529;
+    width: 110px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.text_input {
+    width: 70%;
+    align-self: center;
+}
+
+.logo1 {
+    height: inherit;
+}
+
+.logo2 {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    top: 80px;
+    left: 95px;
+}
+
+.mail, .pin {
+    width: 45px;
+    height: 40px;
+    left: 100px;
+}
+
+@media(max-width:850px) {
+    .row-class {
+        /* width: 100%; */
+        flex-direction: column;
+    }
+
+    .row-class .box3 {
+        margin-top: 20px;
+    }
+
+    .center_class {
+        width: 70%;
+    }
+}
+
+/* .serv-img {
+    flex-basis: 50%;
+    background-image: linear-gradient(black, white);
+    background-image: url("moving-van.jpg");
+} */
