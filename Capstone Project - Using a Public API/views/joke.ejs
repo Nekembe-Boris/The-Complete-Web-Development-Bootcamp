@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+        <h1>Hover over card and accept your fate!!</h1>
+        <div class="card">
+
+            <% if (type === "twopart") { %>
+                <p>
+                    <%= setup %>
+                </p>
+                <p>
+                    <%= delivery %>
+                </p>
+            <% } else { %>
+                <p>
+                    <%= joke %>
+                </p>
+            <% } %>
+        </div>
+
+        <div class="mix">
+            <a href="/fetch/<%= category %>">Hit me with same category</a>
+            <a href="/">Go for another category</a>
+        </div>
+
+    </body>
+
+</html>

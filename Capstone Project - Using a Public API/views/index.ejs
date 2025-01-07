@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+    <h1>Think you can take a joke even if it's Hard?</h1>
+    <div class="card">
+      <% for (let i=0; i<categories.length; i++) { %>
+        <a href="/fetch/<%= categories[i] %>">
+          <%= categories[i] %>
+        </a>
+      <% } %>
+    </div>
+    <div class="mix">
+      <p>
+        Select desired category or opt for a random one
+      </p>
+    </div>
+    <!-- <p class="user">
+
+    </p> -->
+  </body>
+
+</html>
