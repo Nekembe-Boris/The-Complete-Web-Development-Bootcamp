@@ -1,0 +1,66 @@
+
+<%- include("partials/header.ejs") %>
+
+    <div id="body">
+      
+      <div class="contain">
+
+        
+          <div id="menu-list">
+            <li>
+              <a href="/about"><img src="/images/plus.svg" alt="plus icon">SUR NOUS</a>
+            </li>
+
+            <li>
+              <a href="/projects">NOS PROJETS</a>
+            </li>
+          </div>
+        
+
+        <span>
+          What You Want! <br> The Way You Want It.......
+        </span>
+
+        <div id="full-img">
+          <!-- contains full background images -->
+          <!-- not being used -->
+        </div>
+
+        <footer>
+          <p>
+            &copy 2024 CLASS DESIGN
+          </p>
+        </footer>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+
+      fetch("/data")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          let ind = 0;
+
+          function changeImage() {
+            document.getElementById("body").style.backgroundImage = `url('/images/background/${data[ind]}')`;
+            document.getElementById("full-img").style.backgroundImage = `url('/images/background/${data[ind]}')`;
+            ind = (ind + 1) % data.length;
+          }
+          setInterval(changeImage, 7000);
+
+        });
+
+    </script>
+
+  </body>
+
+</html>

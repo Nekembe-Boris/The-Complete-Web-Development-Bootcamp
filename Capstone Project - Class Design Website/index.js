@@ -25,6 +25,15 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
+app.get("/projects", (req, res) => {
+    res.render("projects.ejs");
+});
+
+app.get("/about", (req, res) => {
+    res.render("about.ejs");
+});
+
+
 
 app.listen(port, () => {
     console.log(`App is listening on ${port}`);
