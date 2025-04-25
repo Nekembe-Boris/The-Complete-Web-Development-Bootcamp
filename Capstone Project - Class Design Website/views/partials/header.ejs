@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CLASS DESIGN</title>
+    <link rel="icon" href="/images/classlogo.ico" type="image/icon type">
+  </head>
+  
+  <body>
+    <nav class="navbar fixed-top" id="nav">
+
+      <ul class="nav justify-content-left">
+          <li>
+            <a class="nav-link active" aria-current="page" href="/">
+              <img src="/images/classlog.png" alt="class design logo" width="60" height="40">
+            </a>
+          </li>
+      </ul>
+
+      <div class="norm-nav">
+
+        <ul class="nav justify-content-end">
+
+          <li>
+            <a class="nav-link" href="/">
+              <img src="/images/home.svg" alt="home icon" id="icon">
+            </a>
+          </li>
+          
+          <li class="nav-item dropdown matrix">
+            <a class="nav-link " href="/projects" role="button">
+              PROJETS
+            </a>
+
+            <ul class="hover-link">
+              <li><a href="/project-category/completed" class="top">COMPLÉTÉ</a></li>
+              <li><a href="/project-category/encours">EN COURS</a></li>
+              <li><a href="/project-category/design" class="bot">DESIGN D'INTÉRIEUR</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">À PROPOS</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- navbar mobile version -->
+      <div class="mobile-nav">
+      
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <img src="/images/menu.svg" alt="menu icon">
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <img src="/images/close.svg" alt="close icon" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <!-- <button type="button" class="btn-close" id="close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+          </div>
+          
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/">
+                  <img src="/images/home.svg" alt="home icon" id="icon">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">
+                  PROJETS
+                </a>
+                <ul id="mobile-dropdown">
+                  <li><a class="dropdown-item" href="/project-category/completed">Complété</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/project-category/completed">En Cours</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/project-category/completed">Design D'intérieur</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
