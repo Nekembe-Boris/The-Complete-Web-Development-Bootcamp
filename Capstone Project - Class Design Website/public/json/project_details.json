@@ -1,0 +1,31 @@
+{
+    "completed" : {
+        "grandmall" : {
+            "lieu" : "Douala Airport",
+            "description" : " A 2 floor building on a land of 100sq meters with 3 bedrooms, relaxation hall and a swimming pool for all"
+        },
+        "detente" : {
+            "lieu" : "Rue Koloko, Bonapriso",
+            "description" : "Relaxation lounge with the purpose of receiving visitors."
+        }
+    },
+
+    "design" : {
+        "bona" : {
+            "lieu" : "Bonapriso",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero tortor, laoreet volutpat diam pulvinar"
+        }
+    },
+
+    "encours" : {
+        "inked_bgt" : {
+            "lieu" : "Bonapriso",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero tortor, laoreet volutpat diam pulvinar"
+        },
+        "lendi" : {
+            "lieu" : "Rue Koloko, Bonapriso",
+            "description" : "Relaxation lounge with the purpose of receiving visitors."
+        }
+    }
+
+}
